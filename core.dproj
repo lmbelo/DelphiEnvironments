@@ -119,7 +119,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <DCCReference Include="src\core\Core.DelphiInfo.pas"/>
         <DCCReference Include="src\core\Core.DelphiRegistry.pas"/>
         <DCCReference Include="src\core\Core.Image.pas">
-            <Form>AppImage</Form>
+            <Form>CoreImage</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>

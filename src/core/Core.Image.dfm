@@ -1,4 +1,4 @@
-object AppImage: TAppImage
+object CoreImage: TCoreImage
   OldCreateOrder = False
   Height = 150
   Width = 215

@@ -34,6 +34,6 @@ requires
 contains
   Core.DelphiInfo in 'src\core\Core.DelphiInfo.pas',
   Core.DelphiRegistry in 'src\core\Core.DelphiRegistry.pas',
-  Core.Image in 'src\core\Core.Image.pas' {AppImage: TDataModule};
+  Core.Image in 'src\core\Core.Image.pas' {CoreImage: TDataModule};
 
 end.

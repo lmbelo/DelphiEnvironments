@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Classes, System.ImageList, FMX.ImgList;
 
 type
-  TAppImage = class(TDataModule)
+  TCoreImage = class(TDataModule)
     img50x50: TImageList;
   private
     { Private declarations }
@@ -15,12 +15,18 @@ type
   end;
 
 var
-  AppImage: TAppImage;
+  CoreImage: TCoreImage;
 
 implementation
 
 {%CLASSGROUP 'FMX.Controls.TControl'}
 
 {$R *.dfm}
+
+initialization
+  CoreImage := TCoreImage.Create(nil);
+
+finalization
+  CoreImage.Free();
 
 end.

@@ -48,7 +48,7 @@ var
 begin
   LStream := TMemoryStream.Create;
   try
-    AppImage.img50x50.Bitmap(TSizeF.Create(50, 50), 0).SaveToStream(LStream);
+    CoreImage.img50x50.Bitmap(TSizeF.Create(50, 50), 0).SaveToStream(LStream);
     LStream.Seek(0, 0);
     FData.Add(ITEM_TYPE_CONFIG, 'Settings', String.Empty, String.Empty, LStream);
   finally
@@ -126,7 +126,7 @@ begin
         LGroup := TRttiEnumerationType.GetName<TDelphiVersion>(ADelphiVersion);
         LStream := TMemoryStream.Create;
         try
-          AppImage.img50x50.Bitmap(TSizeF.Create(50, 50), 1).SaveToStream(LStream);
+          CoreImage.img50x50.Bitmap(TSizeF.Create(50, 50), 1).SaveToStream(LStream);
           LStream.Seek(0, 0);
           FData.Add(ITEM_TYPE_REGISTRY, LValue.Name, LValue.Path, LGroup, LStream);
         finally
