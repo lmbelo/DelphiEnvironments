@@ -28,10 +28,12 @@ package core;
 {$IMPLICITBUILD ON}
 
 requires
-  rtl;
+  rtl,
+  fmx;
 
 contains
   Core.DelphiInfo in 'src\core\Core.DelphiInfo.pas',
-  Core.DelphiRegistry in 'src\core\Core.DelphiRegistry.pas';
+  Core.DelphiRegistry in 'src\core\Core.DelphiRegistry.pas',
+  Core.Image in 'src\core\Core.Image.pas' {AppImage: TDataModule};
 
 end.

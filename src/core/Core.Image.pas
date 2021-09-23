@@ -1,4 +1,4 @@
-unit App.Image;
+unit Core.Image;
 
 interface
 

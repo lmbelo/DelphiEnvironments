@@ -9,10 +9,11 @@ uses
 
 type
   TControllerMenu = class(TDataModule)
-    procedure DataModuleCreate(Sender: TObject);
   private
     FData: TDataMenu;
   public
+    constructor Create(AOwner: TComponent); override;
+
     procedure AddMenuItemConfig();
     procedure AddMenuItemDelphi(const ADelphiInfo: TDelphiInfo;
       const ARegistryInfo: TRegistryInfo; const ADelphiVersion: TDelphiVersion);
@@ -27,6 +28,8 @@ var
   ControllerMenu: TControllerMenu;
 
 implementation
+
+{%CLASSGROUP 'FMX.Controls.TControl'}
 
 uses
   System.Types, System.Win.Registry, System.Rtti,
@@ -47,7 +50,7 @@ begin
   try
     AppImage.img50x50.Bitmap(TSizeF.Create(50, 50), 0).SaveToStream(LStream);
     LStream.Seek(0, 0);
-    DataMenu.Add(ITEM_TYPE_CONFIG, 'Settings', String.Empty, String.Empty, LStream);
+    FData.Add(ITEM_TYPE_CONFIG, 'Settings', String.Empty, String.Empty, LStream);
   finally
     LStream.Free;
   end;
@@ -85,7 +88,7 @@ begin
   LStream := TMemoryStream.Create();
   try
     LoadIcon(ARegistryInfo.App, LStream);
-    DataMenu.Add(ITEM_TYPE_DELPHI, ADelphiInfo.Product, 'Registries', LGroup, LStream);
+    FData.Add(ITEM_TYPE_DELPHI, ADelphiInfo.Product, 'Registries', LGroup, LStream);
   finally
     LStream.Free();
   end;
@@ -96,12 +99,13 @@ var
   LDelphiVersion: TDelphiVersion;
 begin
   for LDelphiVersion := Low(TDelphiVersion) to High(TDelphiVersion) do begin
-    Data.Remove(TRttiEnumerationType.GetName<TDelphiVersion>(LDelphiVersion));
+    FData.Remove(TRttiEnumerationType.GetName<TDelphiVersion>(LDelphiVersion));
   end;
 end;
 
-procedure TControllerMenu.DataModuleCreate(Sender: TObject);
+constructor TControllerMenu.Create(AOwner: TComponent);
 begin
+  inherited;
   FData := TDataMenu.Create(Self);
 end;
 
@@ -124,7 +128,7 @@ begin
         try
           AppImage.img50x50.Bitmap(TSizeF.Create(50, 50), 1).SaveToStream(LStream);
           LStream.Seek(0, 0);
-          DataMenu.Add(ITEM_TYPE_REGISTRY, LValue.Name, LValue.Path, LGroup, LStream);
+          FData.Add(ITEM_TYPE_REGISTRY, LValue.Name, LValue.Path, LGroup, LStream);
         finally
           LStream.Free;
         end;

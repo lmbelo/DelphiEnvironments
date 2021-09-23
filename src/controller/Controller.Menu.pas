@@ -36,7 +36,7 @@ uses
   Winapi.ShellAPI, Winapi.Windows,
   Vcl.Graphics,
   FMX.ImgList,
-  App.Image;
+  Core.Image;
 
 {%CLASSGROUP 'FMX.Controls.TControl'}
 

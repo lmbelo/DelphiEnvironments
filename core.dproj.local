@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2021/09/23 16:46:42.279,=rtl.dcp</Transaction>
-    <Transaction>2021/09/23 16:46:45.583,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\Core.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
-    <Transaction>2021/09/23 16:47:23.627,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\Core.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\Core.dproj</Transaction>
-    <Transaction>2021/09/23 16:48:10.241,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\s.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\Core.dproj</Transaction>
-    <Transaction>2021/09/23 16:48:12.456,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\core.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\s.dproj</Transaction>
-    <Transaction>2021/09/23 16:49:45.858,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\core\Core.DelphiInfo.pas</Transaction>
-    <Transaction>2021/09/23 16:49:46.116,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\core\Core.DelphiRegistry.pas</Transaction>
+	<Transactions>
+    <Transaction>2021/09/23 16:46:42.000.279,=rtl.dcp</Transaction>
+    <Transaction>2021/09/23 16:46:45.000.583,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\Package1.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\Core.dproj</Transaction>
+    <Transaction>2021/09/23 16:47:23.000.627,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\Core.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\Core.dproj</Transaction>
+    <Transaction>2021/09/23 16:48:10.000.241,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\Core.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\s.dproj</Transaction>
+    <Transaction>2021/09/23 16:48:12.000.456,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\s.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\core.dproj</Transaction>
+    <Transaction>2021/09/23 16:49:45.000.858,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\core\Core.DelphiInfo.pas</Transaction>
+    <Transaction>2021/09/23 16:49:46.000.116,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\core\Core.DelphiRegistry.pas</Transaction>
+    <Transaction>2021/09/23 17:55:22.406,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiEnvironments\src\core\Core.Image.pas</Transaction>
+    <Transaction>2021/09/23 17:56:10.765,=fmx.dcp</Transaction>
   </Transactions>
 </BorlandProject>
