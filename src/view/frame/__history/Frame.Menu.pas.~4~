@@ -1,0 +1,48 @@
+unit Frame.Menu;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  Data.Bind.EngExt, Fmx.Bind.DBEngExt, System.Rtti, System.Bindings.Outputs,
+  Fmx.Bind.Editors, FMX.ListView.Types, FMX.ListView.Appearances,
+  FMX.ListView.Adapters.Base, FMX.ListView, FMX.MultiView, FMX.TabControl,
+  Frame.MenuBarDelphiVersion, FMX.Controls.Presentation, FMX.Layouts,
+  Data.Bind.Components, Data.Bind.DBScope;
+
+type
+  TFrameMenu = class(TFrame)
+    BindingsList1: TBindingsList;
+    LinkListControlToField1: TLinkListControlToField;
+    BindSourceDB1: TBindSourceDB;
+    loMain: TLayout;
+    tbTopMenu: TToolBar;
+    btnDown: TSpeedButton;
+    btnUp: TSpeedButton;
+    frmMenuBarDelphiVersion: TFrameMenuBarDelphiVersion;
+    loDisplay: TLayout;
+    tcView: TTabControl;
+    mvMenu: TMultiView;
+    btnMenu: TSpeedButton;
+    lvlItems: TListView;
+  private
+    { Private declarations }
+  public
+    constructor Create(AOwner: TComponent); override;
+  end;
+
+implementation
+
+{$R *.fmx}
+
+{ TFrameMenu }
+
+constructor TFrameMenu.Create(AOwner: TComponent);
+begin
+  inherited;
+  FController := TControllerMenu.Create(Self, DataMenu);
+  FController.AddMenuItemConfig();
+end;
+
+end.

@@ -14,11 +14,14 @@ type
     fdmtMenuITEM_NAME: TStringField;
     fdmtMenuITEM_DESC: TStringField;
     fdmtMenuITEM_IMG: TBlobField;
+    fdmtMenuITEM_GROUP: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
   public
-    procedure Add(const AItemType: byte; const AItemName, AItemDesc: string; const AItemImg: TStream);
+    procedure Add(const AItemType: byte; const AItemName, AItemDesc,
+      AItemGroup: string; const AItemImg: TStream);
+    procedure Remove(const AItemGroup: string);
   end;
 
 var
@@ -37,12 +40,13 @@ implementation
 {$R *.dfm}
 
 procedure TDataMenu.Add(const AItemType: byte; const AItemName,
-  AItemDesc: string; const AItemImg: TStream);
+  AItemDesc, AItemGroup: string; const AItemImg: TStream);
 begin
   fdmtMenu.Append();
   fdmtMenuITEM_TYPE.AsInteger := AItemType;
   fdmtMenuITEM_NAME.AsString := AItemName;
   fdmtMenuITEM_DESC.AsString := AItemDesc;
+  fdmtMenuITEM_GROUP.AsString := AItemGroup;
   if Assigned(AItemImg) then
     fdmtMenuITEM_IMG.LoadFromStream(AItemImg);
   fdmtMenu.Post();
@@ -51,6 +55,23 @@ end;
 procedure TDataMenu.DataModuleCreate(Sender: TObject);
 begin
   fdmtMenu.CreateDataSet();
+end;
+
+procedure TDataMenu.Remove(const AItemGroup: string);
+begin
+  fdmtMenu.DisableControls();
+  try
+    fdmtMenu.Filter := Format('ITEM_GROUP = %s', [AItemGroup.QuotedString()]);
+    fdmtMenu.Filtered := true;
+    try
+      while not fdmtMenu.Eof do
+        fdmtMenu.Delete();
+    finally
+      fdmtMenu.Filtered := false;
+    end;
+  finally
+    fdmtMenu.EnableControls();
+  end;
 end;
 
 end.

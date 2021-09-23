@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/09/23 16:41:35.081,=rtl.dcp</Transaction>
+    <Transaction>2021/09/23 16:41:39.528,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\Data.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>2021/09/23 16:42:19.096,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\Data.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\Data.dproj</Transaction>
+    <Transaction>2021/09/23 16:47:35.965,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\Data.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\Data.dproj</Transaction>
+    <Transaction>2021/09/23 16:48:14.744,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\d.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\Data.dproj</Transaction>
+    <Transaction>2021/09/23 16:48:16.241,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\data.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\d.dproj</Transaction>
+    <Transaction>2021/09/23 16:49:14.552,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\data\Data.Menu.pas</Transaction>
+    <Transaction>2021/09/23 16:50:20.453,=core.dcp</Transaction>
+    <Transaction>2021/09/23 16:50:58.411,=dbrtl.dcp</Transaction>
+    <Transaction>2021/09/23 16:50:58.438,=FireDAC.dcp</Transaction>
+    <Transaction>2021/09/23 16:50:58.467,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>2021/09/23 16:50:58.504,=FireDACCommon.dcp</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{482FDE80-F92D-4BBA-A092-DDC7FDD1BDC6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="core.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="data.dproj">
+            <Dependencies>core.dproj</Dependencies>
+        </Projects>
+        <Projects Include="controller.dproj">
+            <Dependencies>data.dproj;core.dproj</Dependencies>
+        </Projects>
+        <Projects Include="view.dproj">
+            <Dependencies>data.dproj;controller.dproj;core.dproj</Dependencies>
+        </Projects>
+        <Projects Include="DelphiEnvironments.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="core">
+        <MSBuild Projects="core.dproj"/>
+    </Target>
+    <Target Name="core:Clean">
+        <MSBuild Projects="core.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="core:Make">
+        <MSBuild Projects="core.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="data" DependsOnTargets="core">
+        <MSBuild Projects="data.dproj"/>
+    </Target>
+    <Target Name="data:Clean" DependsOnTargets="core:Clean">
+        <MSBuild Projects="data.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="data:Make" DependsOnTargets="core:Make">
+        <MSBuild Projects="data.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="controller" DependsOnTargets="data;core">
+        <MSBuild Projects="controller.dproj"/>
+    </Target>
+    <Target Name="controller:Clean" DependsOnTargets="data:Clean;core:Clean">
+        <MSBuild Projects="controller.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="controller:Make" DependsOnTargets="data:Make;core:Make">
+        <MSBuild Projects="controller.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="view" DependsOnTargets="data;controller;core">
+        <MSBuild Projects="view.dproj"/>
+    </Target>
+    <Target Name="view:Clean" DependsOnTargets="data:Clean;controller:Clean;core:Clean">
+        <MSBuild Projects="view.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="view:Make" DependsOnTargets="data:Make;controller:Make;core:Make">
+        <MSBuild Projects="view.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DelphiEnvironments">
+        <MSBuild Projects="DelphiEnvironments.dproj"/>
+    </Target>
+    <Target Name="DelphiEnvironments:Clean">
+        <MSBuild Projects="DelphiEnvironments.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DelphiEnvironments:Make">
+        <MSBuild Projects="DelphiEnvironments.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="core;data;controller;view;DelphiEnvironments"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="core:Clean;data:Clean;controller:Clean;view:Clean;DelphiEnvironments:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="core:Make;data:Make;controller:Make;view:Make;DelphiEnvironments:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

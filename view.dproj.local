@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/09/23 16:41:48.969,=rtl.dcp</Transaction>
+    <Transaction>2021/09/23 16:41:52.974,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\View.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>2021/09/23 16:42:21.684,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\View.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\View.dproj</Transaction>
+    <Transaction>2021/09/23 16:47:46.908,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\View.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\View.dproj</Transaction>
+    <Transaction>2021/09/23 16:48:18.801,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\v.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\View.dproj</Transaction>
+    <Transaction>2021/09/23 16:48:20.888,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\view.dproj=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\v.dproj</Transaction>
+    <Transaction>2021/09/23 16:48:50.680,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\view\frame\Frame.Category.pas</Transaction>
+    <Transaction>2021/09/23 16:48:50.823,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\view\frame\Frame.CategoryDelphi.pas</Transaction>
+    <Transaction>2021/09/23 16:48:55.614,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\view\frame\Frame.Configuration.pas</Transaction>
+    <Transaction>2021/09/23 16:48:55.720,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\view\frame\Frame.MenuBarDelphiVersion.pas</Transaction>
+    <Transaction>2021/09/23 16:48:55.820,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\view\frame\Frame.Presentation.pas</Transaction>
+    <Transaction>2021/09/23 16:50:28.079,=core.dcp</Transaction>
+    <Transaction>2021/09/23 16:51:29.244,=controller.dcp</Transaction>
+    <Transaction>2021/09/23 16:51:32.625,=data.dcp</Transaction>
+    <Transaction>2021/09/23 17:07:33.884,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\Unit1.pas</Transaction>
+    <Transaction>2021/09/23 17:07:51.445,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\view\frame\Frame.Menu.fmx=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\Unit1.fmx</Transaction>
+    <Transaction>2021/09/23 17:07:51.445,C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\view\frame\Frame.Menu.pas=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\Unit1.pas</Transaction>
+    <Transaction>2021/09/23 17:10:27.571,=bindengine.dcp</Transaction>
+    <Transaction>2021/09/23 17:10:27.605,=bindcomp.dcp</Transaction>
+    <Transaction>2021/09/23 17:10:27.638,=bindcompfmx.dcp</Transaction>
+    <Transaction>2021/09/23 17:18:14.801,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\view\frame\menu\Frame.Menu.pas</Transaction>
+    <Transaction>2021/09/23 17:18:14.938,=C:\Users\lucas.belo\Documents\Embarcadero\Studio\Projects\DelphiRegKey\src\view\frame\menu\Frame.MenuBarDelphiVersion.pas</Transaction>
+  </Transactions>
+</BorlandProject>

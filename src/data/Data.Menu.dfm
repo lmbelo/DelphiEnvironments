@@ -27,6 +27,9 @@ object DataMenu: TDataMenu
       FieldName = 'ITEM_DESC'
       Size = 500
     end
+    object fdmtMenuITEM_GROUP: TStringField
+      FieldName = 'ITEM_GROUP'
+    end
     object fdmtMenuITEM_IMG: TBlobField
       FieldName = 'ITEM_IMG'
     end

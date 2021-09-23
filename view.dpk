@@ -1,0 +1,47 @@
+package view;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  core,
+  controller,
+  data,
+  bindengine,
+  bindcomp,
+  bindcompfmx;
+
+contains
+  Frame.Category in 'src\view\frame\Frame.Category.pas' {FrameCategory: TFrame},
+  Frame.CategoryDelphi in 'src\view\frame\Frame.CategoryDelphi.pas' {FrameCategoryDelphi: TFrame},
+  Frame.Configuration in 'src\view\frame\Frame.Configuration.pas' {FrameConfiguration: TFrame},
+  Frame.Presentation in 'src\view\frame\Frame.Presentation.pas' {FramePresentation: TFrame},
+  Frame.Menu in 'src\view\frame\menu\Frame.Menu.pas' {FrameMenu: TFrame},
+  Frame.MenuBarDelphiVersion in 'src\view\frame\menu\Frame.MenuBarDelphiVersion.pas' {FrameMenuBarDelphiVersion: TFrame};
+
+end.

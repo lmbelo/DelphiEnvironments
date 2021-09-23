@@ -1,0 +1,6 @@
+object ControllerMenu: TControllerMenu
+  OldCreateOrder = True
+  OnCreate = DataModuleCreate
+  Height = 211
+  Width = 433
+end
